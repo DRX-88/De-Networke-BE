@@ -17,7 +17,7 @@ app.use('/api/comments', commentRoutes);
 
 
 
-mongoose.connect('mongodb://localhost/api');
+mongoose.connect('mongodb://localhost/de-network-api');
 
 app.use('api/users', require('./routes/api/user-route'));
 app.use('api/posts', require('./routes/api/posts-route'));

@@ -3,6 +3,18 @@ const userSeed = [
         username: 'sarah',
         email: 'sarah@email.com'
     },
+    {
+        username: 'john',
+        email: 'john@email.com'
+    },
+    {
+        username: 'jane',
+        email: 'jane@email.com'
+    },
+    {
+        username: 'joe',
+        email: 'joe@email.com'
+    },
 ];
 
 const postSeed = [
@@ -12,33 +24,27 @@ const postSeed = [
         postDate: '2021-09-15',
         username: userSeed[0].username,
         comments: [],
-    }
+    },
+    {
+        postText: 'This is the content of post 2',
+        postDate: '2021-09-16',
+        username: userSeed[1].username,
+        comments: [],
+    },
+    {
+        postText: 'This is the content of post 3',
+        postDate: '2021-09-17',
+        username: userSeed[2].username,
+        comments: [],
+    },
+    {
+        postText: 'This is the content of post 4',
+        postDate: '2021-09-18',
+        username: userSeed[3].username,
+        comments: [],
+    },
 ]
 
-
-// postText: {
-//     type: String,
-//     required: true,
-//     trim: true,
-//     minlength: 1,
-//     maxlength: 280,
-// },
-// postDate: {
-//     type: Date,
-//     default: Date.now,
-//     get: (timestamp) => dateFormat(timestamp),
-// },
-// username: {
-//     type: String,
-//     required: true,
-// },    
-// comments: [commentSchema],
-// }, {
-// toJSON: {
-//     virtuals: true,
-
-// },
-// id: false,
 
 // const posts = [
 //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',

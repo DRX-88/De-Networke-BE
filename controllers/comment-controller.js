@@ -2,20 +2,20 @@ const { Comment, Post } = require('../models');
 
 const commentController = {
     addComment: async ({ params, body }, res) => {
-        const { postId } = params;
-        const { commentBody, username } = body;
         try {
-            const post = await Post.findById(postId);
-            if (!post) {
+            const commentData = await Comment.create(body);
+            const addComment = await Post.findOneAndUpdate(
+                { _id: params.postId },
+                { $push: { comments: commentData._id } },
+                { new: true }
+            );
+            if (!addComment) {
                 return res.status(404).json({ message: 'Post not found' });
             }
-            const newComment = await Comment.create({ commentBody, username });
-            post.comments.push(newComment._id);
-            await post.save();
-            res.status(201).json(newComment);
+            res.json(addComment);
         } catch (error) {
-            console.error('Error creating comment:', error);
-            res.status(400).json({ error: 'Failed to create comment' });
+            console.error('Error adding comment:', error);
+            res.status(500).json({ error: 'Failed to add comment' });
         }
     },
 

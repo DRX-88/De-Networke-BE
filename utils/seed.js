@@ -6,7 +6,7 @@ const { userSeed, postSeed } = require('../utils/data');
 
 
 
-mongoose.connect('mongodb://localhost/api');
+mongoose.connect('mongodb://localhost/de-network-api');
 
 const connection = mongoose.connection;
 
