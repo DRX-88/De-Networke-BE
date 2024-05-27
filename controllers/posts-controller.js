@@ -28,11 +28,11 @@ const postController = {
     createPost: async ({ body }, res) => {
         const { username } = body;
         try {
-            const userData = await User.findOne({ username });
-            if (!userData) {
-                res.status(400).json({ message: 'No user found with this username!' });
-                return;
-            }
+            // const userData = await User.findOne({ username });
+            // if (!userData) {
+            //     res.status(400).json({ message: 'No user found with this username!' });
+            //     return;
+            // }
             const postData = await Post.create(body);
             userData.posts.push(postData._id);
             await userData.save();

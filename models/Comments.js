@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const commentSchema = new mongoose.Schema({
     commentId: {
         type: mongoose.Schema.Types.ObjectId,
-        default: () => new mongoose.Types.ObjectId(),
+        // default: () => new mongoose.Types.ObjectId(),
     },
     commentText: {
         type: String,
@@ -11,8 +11,7 @@ const commentSchema = new mongoose.Schema({
         trim: true,
     },
     username: {
-        type: String,
-        required: true,
+        type: mongoose.Schema.Types.ObjectId, ref: 'User',
     },
     commentDate: {
         type: Date,

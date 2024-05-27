@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const Comment = require('./Comments');
 const commentSchema = require('./Comments');
+const { get } = require('lodash');
 
 const postSchema = new mongoose.Schema({
     postText: {
@@ -12,7 +13,8 @@ const postSchema = new mongoose.Schema({
     },
     postDate: {
         type: Date,
-        default: Date.now
+        default: Date.now,
+        get: (timestamp) => dateFormat(timestamp),
     },
     username: {
         type: String,

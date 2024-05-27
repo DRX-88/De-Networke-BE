@@ -1,3 +1,4 @@
+const { create } = require('lodash');
 const { User } = require('../models');
 
 const userController = {
@@ -25,16 +26,35 @@ const userController = {
             res.status(500).json(err);
         }
     },
-
-    createUser: async ({ body }, res) => {
+    
+    createUser: async (req, res) => {
+        console.log('==================', req.body);
         try {
-            const userData = await User.create(body);
+            const userData = await User.create(req.body);
             res.json(userData);
         } catch (err) {
             console.log(err);
             res.status(500).json(err);
         }
     },
+    
+
+    // createUser: async (req, res) => {
+    //     const { username, email } = req.body;
+    //     try {
+    //         const newUser = new User({ username, email });
+    //             await User.create(newUser);
+            
+    //         res.send(newUser);
+    //     //   const newUser =  new await User.create(newUser);
+        
+    //     //     res.status(201).json(newUser);
+
+    //     } catch (error) {
+    //       console.error('Error creating user:', error);
+    //       res.status(400).json({ error: 'Failed to create user' });
+    //     }
+    //   },
 
     updateUser: async ({ params, body }, res) => {
         try {

@@ -11,7 +11,6 @@ const userSchema = new mongoose.Schema({
         type: String,
         unique: true,
         required: true,
-        match: [/.+@.+\..+/, 'Please enter a valid e-mail address'],
     },
     posts: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Post' }],
     friends: [{ type: mongoose.Schema.Types.ObjectId, ref: 'User' }],
