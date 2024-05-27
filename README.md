@@ -69,9 +69,9 @@ Contributions are welcome! Please follow these steps:
 
 ## Technologies
 
-- Webpack: A module bundler that helps you bundle your JavaScript files for deployment.
-- Babel: A JavaScript compiler that allows you to write modern JavaScript code and convert it into backward-compatible versions for older browsers.
-- Express: A fast, unopinionated, and minimalist web framework for Node.js.
+- Express.js: A fast and minimalist web application framework for Node.js.
+- Lodash: A utility library that provides helpful functions for working with arrays, objects, and more.
+- Mongoose: An elegant MongoDB object modeling tool designed to work in an asynchronous environment.
 
 ## Links
 [Render Deployment](https://install-me.onrender.com)
