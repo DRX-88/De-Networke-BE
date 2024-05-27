@@ -42,10 +42,6 @@ Run both the client and server side:
 ![image](https://github.com/DRX-88/De-Networke-BE/assets/162182740/a990d0de-cd87-4a29-abe0-e5937bc3ff98)
 
 
-
-
-
-
 ## Contributions
 
 Contributions are welcome! Please follow these steps:
