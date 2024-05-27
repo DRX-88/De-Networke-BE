@@ -40,13 +40,11 @@ Run both the client and server side:
     ```bash
     npm run start
     ```
-### Demo
+### Demo of the add a Friend system
 
-![image](https://github.com/DRX-88/Install-Me/assets/162182740/931aeec3-54ec-4397-8dff-7cd8d85d5917)
 
-Demonstration of the app installed
 
-![image](https://github.com/DRX-88/Install-Me/assets/162182740/3617b973-af2f-4f79-8be6-e23e6e461a44)
+
 
 
 
