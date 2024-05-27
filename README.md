@@ -22,9 +22,6 @@ Thank you for choosing De Network Back End! This application is designed to help
 - Comment System: Allow users to add comments to posts.
 - Friend Connections: Enable users to add friends and manage friend lists.
 
-
-
-
 ## Installation
 
 Clone the repository to your local machine:
@@ -42,6 +39,7 @@ Run both the client and server side:
     ```
 ### Demo of the add a Friend system
 
+![image](https://github.com/DRX-88/De-Networke-BE/assets/162182740/a990d0de-cd87-4a29-abe0-e5937bc3ff98)
 
 
 
@@ -74,9 +72,9 @@ Contributions are welcome! Please follow these steps:
 - Express: A fast, unopinionated, and minimalist web framework for Node.js.
 
 ## Links
-[Render Deployment](https://install-me.onrender.com)
+[Tutorial Video](https://drive.google.com/file/d/1Pk-JiH6HSEHo-3-bPPK7B2pOh-LqIG5N/view?)
 
-[Github Repo](https://github.com/DRX-88/Install-Me)
+[Github Repo](https://github.com/DRX-88/De-Network-BE)
 
 ## Questions
 If you have any questions, you can reach me through the following:
